@@ -1,0 +1,250 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    text-align:center;
+    color:#555;
+}
+a{
+    text-decoration:none;
+}
+body{
+    font-family:STHeiti, 微软雅黑, "Microsoft Yahei";
+}
+.tag {
+    position:absolute;
+    width:80px;
+    height:40px;
+    font-size:12px;
+    color:#ccc;
+    line-height:40px;
+    background-color:#555;
+    border-left:1px solid #444;
+    border-right:1px solid #444;
+    box-shadow:0px 0px 1px #000;
+    border-radius:3px;
+}
+.angle {
+    position:absolute;
+    left:50%;
+    margin-left:-6px; 
+    width:10px;
+    height:10px;
+    background-color:#555;
+    -webkit-transform:rotate(45deg);
+}
+.info{
+    display:none;
+}
+
+.main .top, .main .bottom{
+    width:100%;
+    height:50%;
+}
+.main .bottom{
+    border-top:1px solid #eee;
+}
+.main .bottom .player {
+    position:relative;
+    width:40%;
+    height:40%;
+    min-width:430px;
+    margin:0px 30%;
+}
+.main .bottom .player>div{
+    position:absolute;
+}
+.main .bottom .player .btn{
+    top:-50px;
+    width:100px;
+    height:100px;
+    background:url(./playerIcons.png) no-repeat 100% 100%;
+    cursor:pointer;
+}
+.main .bottom .player .btn:hover .info{
+    display:block;
+}
+.main .bottom .player .btn .ico{
+    width:100%;
+    height:100%;
+}
+/*tag*/
+.main .bottom .player .btn .tag {
+    top:-50px;
+    left:50%;
+    border-top:1px solid #444;
+    margin-left:-40px;
+}
+.main .bottom .player .btn .angle {    
+    top:-15px;
+    left:50%;
+    margin-left:-6px;
+    border-right:1px solid #444;
+    border-bottom:1px solid #444;
+}
+/*btn*/
+.main .bottom .player .like {
+    left:-48%;
+}
+.main .bottom .player .like .ico{
+    background:url(./playerIcons.png) no-repeat 0% 100%;
+    -webkit-animation: like 5s infinite;
+}
+.main .bottom .player .like .ico:hover{
+    background:url(./playerIcons.png) no-repeat 0% 0%;
+}
+.main .bottom .player .del {
+    left:-18%;
+}
+.main .bottom .player .del .ico{
+    background:url(./playerIcons.png) no-repeat 75% 100%;
+    -webkit-animation: fan 10s infinite;
+}
+.main .bottom .player .del .ico:hover{
+    background:url(./playerIcons.png) no-repeat 75% 0%;
+}
+.main .bottom .player .rpt {
+    right:-18%;
+}
+.main .bottom .player .rpt .ico{
+    background:url(./playerIcons.png) no-repeat 25% 100%;
+    -webkit-animation: fan 20s infinite;
+}
+.main .bottom .player .rpt .ico:hover{
+    background:url(./playerIcons.png) no-repeat 25% 0%;
+}
+.main .bottom .player .next {
+    right:-48%;
+}
+.main .bottom .player .next .ico{
+    background:url(./playerIcons.png) no-repeat 50% 100%;
+    -webkit-animation:next 30s infinite linear;
+}
+.main .bottom .player .next .ico:hover{
+    background:url(./playerIcons.png) no-repeat 50% 0%;
+}
+/*cd*/
+.main .bottom .player .cd {
+    width:300px;
+    height:300px;
+    top:-150px;
+    left:50%;
+    margin-left:-150px;
+    border-radius:100%;
+    box-shadow:0 0 5px #ccc,inset 0 0 0 5px rgba(255,255,255,.5);
+    background:url(http://img.jing.fm/album/AM/2012/0919/17/AY/AM2012091917AYD.jpg);
+    -webkit-animation: roll 10s infinite linear;
+    -moz-animation: roll 10s infinite linear;
+    -o-animation: roll 10s infinite linear;
+    animation: roll 10s infinite linear;
+}
+/*stop*/
+.main .bottom .player .stop {
+    width:69px;
+    height:69px;
+    top:-34px;
+    left:50%;
+    margin-left:-34px;
+    background:url(./playCtl.png) no-repeat 100% 100%;
+    cursor:pointer;
+    opacity:0;
+}
+.main .bottom .player .stop:hover {
+    opacity:1;
+}
+.main .bottom .player .stop div{
+    width:100%;
+    height:100%;
+    background:url(./playCtl.png) no-repeat 50% 100%;
+}
+.main .bottom .player .word {
+    top:200px;
+    width:100%;
+
+}
+.main .bottom .player .word a {
+    width:14px;
+    height:11px;
+    background:url(http://img.jing.fm/assets/jing/shareIcon.png);
+    display:inline-block;
+    position:absolute;
+    top:6px;
+    cursor:pointer;
+}
+.main .bottom .player .word a:hover .info{
+    display:block;
+}
+.main .bottom .player .word .tag {
+    top:-50px;
+    left:50%; 
+    margin-left:-40px;    
+}
+.main .bottom .player .word .angle {
+    top:-15px;
+}
+
+.main .bottom .other {
+    width:30px;
+    height:30px;
+    background-color:#aaa;
+    border-radius:100%;
+    position:absolute;
+    top:80%;
+    left:30px;
+}
+.main .bottom .other div{
+    width:70px;
+    height:20px;
+    background-color:#aaa;
+    border-radius:10px;
+    position:absolute;
+    display:none;
+}
+.main .bottom .other:hover .item1 {
+    -webkit-animation:jump 10s;
+}
+
+/*animiation*/
+@-webkit-keyframes jump {
+    0% {display:block;top:0px;}
+    25% {top:150px;}
+    75% {top:140px;}
+    100% {top:145px;}
+}
+@-webkit-keyframes roll {
+    from {-webkit-transform:rotate(0deg);}
+    to {-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes roll {
+    from {-moz-transform:rotate(0deg);}
+    to {-moz-transform:rotate(360deg);}
+}
+@-o-keyframes roll {
+    from {-o-transform:rotate(0deg);}
+    to {-o-transform:rotate(360deg);}
+}
+@keyframes roll {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+@-webkit-keyframes like {
+    0% {-webkit-transform:rotate(0deg);}
+    50% {-webkit-transform:rotate(360deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+@-webkit-keyframes fan {
+    0% {-webkit-transform:rotate(0deg);}
+    50% {-webkit-transform:rotate(-360deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+@-webkit-keyframes next {
+    0% {-webkit-transform:rotate(0deg);}
+    25% {-webkit-transform:rotate(-30deg);}
+    75% {-webkit-transform:rotate(30deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+footer {
+    width:100%;
+    height:75px;
+    border-top:1px solid #ddd;
+}
