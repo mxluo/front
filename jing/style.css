@@ -32,6 +32,9 @@ body{
     height:10px;
     background-color:#555;
     -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -moz-tranform:rotate(45deg);
+    tranform:rotate(45deg);
 }
 .info{
     display:none;
@@ -89,6 +92,9 @@ body{
 .main .bottom .player .like .ico{
     background:url(./playerIcons.png) no-repeat 0% 100%;
     -webkit-animation: like 5s infinite;
+    -o-animation: like 5s infinite;
+    -moz-animation: like 5s infinite;
+    animation: like 5s infinite;
 }
 .main .bottom .player .like .ico:hover{
     background:url(./playerIcons.png) no-repeat 0% 0%;
@@ -99,6 +105,9 @@ body{
 .main .bottom .player .del .ico{
     background:url(./playerIcons.png) no-repeat 75% 100%;
     -webkit-animation: fan 10s infinite;
+    -o-animation: fan 10s infinite;
+    -moz-animation: fan 10s infinite;
+    animation: fan 10s infinite;
 }
 .main .bottom .player .del .ico:hover{
     background:url(./playerIcons.png) no-repeat 75% 0%;
@@ -109,6 +118,9 @@ body{
 .main .bottom .player .rpt .ico{
     background:url(./playerIcons.png) no-repeat 25% 100%;
     -webkit-animation: fan 20s infinite;
+    -o-animation: fan 20s infinite;
+    -moz-animation: fan 20s infinite;
+    animation: fan 20s infinite;
 }
 .main .bottom .player .rpt .ico:hover{
     background:url(./playerIcons.png) no-repeat 25% 0%;
@@ -119,6 +131,9 @@ body{
 .main .bottom .player .next .ico{
     background:url(./playerIcons.png) no-repeat 50% 100%;
     -webkit-animation:next 30s infinite linear;
+    -o-animation:next 30s infinite linear;
+    -moz-animation:next 30s infinite linear;
+    animation:next 30s infinite linear;
 }
 .main .bottom .player .next .ico:hover{
     background:url(./playerIcons.png) no-repeat 50% 0%;
@@ -183,34 +198,9 @@ body{
     top:-15px;
 }
 
-.main .bottom .other {
-    width:30px;
-    height:30px;
-    background-color:#aaa;
-    border-radius:100%;
-    position:absolute;
-    top:80%;
-    left:30px;
-}
-.main .bottom .other div{
-    width:70px;
-    height:20px;
-    background-color:#aaa;
-    border-radius:10px;
-    position:absolute;
-    display:none;
-}
-.main .bottom .other:hover .item1 {
-    -webkit-animation:jump 10s;
-}
+
 
 /*animiation*/
-@-webkit-keyframes jump {
-    0% {display:block;top:0px;}
-    25% {top:150px;}
-    75% {top:140px;}
-    100% {top:145px;}
-}
 @-webkit-keyframes roll {
     from {-webkit-transform:rotate(0deg);}
     to {-webkit-transform:rotate(360deg);}
@@ -232,10 +222,40 @@ body{
     50% {-webkit-transform:rotate(360deg);}
     100% {-webkit-transform:rotate(0deg);}
 }
+@-moz-keyframes like {
+    0% {-webkit-transform:rotate(0deg);}
+    50% {-webkit-transform:rotate(360deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+@-o-keyframes like {
+    0% {-webkit-transform:rotate(0deg);}
+    50% {-webkit-transform:rotate(360deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+@keyframes like {
+    0% {transform:rotate(0deg);}
+    50% {transform:rotate(360deg);}
+    100% {transform:rotate(0deg);}
+}
 @-webkit-keyframes fan {
     0% {-webkit-transform:rotate(0deg);}
     50% {-webkit-transform:rotate(-360deg);}
     100% {-webkit-transform:rotate(0deg);}
+}
+@-moz-keyframes fan {
+    0% {-webkit-transform:rotate(0deg);}
+    50% {-webkit-transform:rotate(-360deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+@-o-keyframes fan {
+    0% {-webkit-transform:rotate(0deg);}
+    50% {-webkit-transform:rotate(-360deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+@keyframes fan {
+    0% {transform:rotate(0deg);}
+    50% {transform:rotate(-360deg);}
+    100% {transform:rotate(0deg);}
 }
 @-webkit-keyframes next {
     0% {-webkit-transform:rotate(0deg);}
@@ -243,6 +263,25 @@ body{
     75% {-webkit-transform:rotate(30deg);}
     100% {-webkit-transform:rotate(0deg);}
 }
+@-moz-keyframes next {
+    0% {-webkit-transform:rotate(0deg);}
+    25% {-webkit-transform:rotate(-30deg);}
+    75% {-webkit-transform:rotate(30deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+@-o-keyframes next {
+    0% {-webkit-transform:rotate(0deg);}
+    25% {-webkit-transform:rotate(-30deg);}
+    75% {-webkit-transform:rotate(30deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+@keyframes next {
+    0% {transform:rotate(0deg);}
+    25% {transform:rotate(-30deg);}
+    75% {-ransform:rotate(30deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+
 footer {
     width:100%;
     height:75px;

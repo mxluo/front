@@ -1,0 +1,56 @@
+/*
+*@description round avatar
+*@author VickyRoman
+*/
+* {box-sizing: border-box;}
+a {text-decoration: none;}
+.avatar {
+	position: relative;
+	width: 120px;
+	height: 100px;
+}
+.avatar:hover .info {
+	display: block;
+}
+.avatar .ava-round {
+	width: 100px;
+	height: 100px;
+	border: 5px solid rgba(255, 255, 255, .5);
+	border-radius: 100%;
+	box-shadow: 0 0 5px #ccc;
+}
+.avatar .info {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 120px;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+.avatar .info .ava-square {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin: 20px;
+	border-radius: 3px;
+}
+.avatar .info .desc {
+	float:left;
+}
+.avatar .info .angle {
+	position: absolute;
+	top: 43px;
+	left:-11px;
+	z-index:999;
+	width: 20px;
+	height: 20px;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+	background-color: #fff;
+}
