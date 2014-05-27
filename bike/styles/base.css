@@ -1,0 +1,148 @@
+/*
+ *@Description:BikersClub-Gallery
+ *@Author:Vicky Roman
+ *@Author URI:
+ *@psd source http://www.zcool.com.cn/gfx/ZMzEzMTg0.html
+*/
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../../public/fonts/MyriadPro-Semibold.otf') format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer,
+header,
+hgroup,
+nav {
+    display: block;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h2,
+h3 {
+    color: rgb(255, 120, 0);
+}
+body {
+    background-color: rgb(62, 29, 9);
+    font-family: 'MyriadPro', 'Microsoft YaHei', Arial;
+}
+header,
+footer {
+    width: 100%;
+}
+
+
+header {
+    position: relative;
+}
+header .background {
+    width: 100%;
+}
+header .head-nav,
+header .join {
+    position: absolute;
+    right:15%; 
+}
+header .head-nav {
+    top: 0;
+    height: 80px;
+}
+header .head-nav ul,
+header .head-nav ul li,
+header .head-nav ul li a {
+    height: 100%;
+}
+header .head-nav ul li {
+    float: right;
+}
+header .head-nav ul li a {
+    display: block;
+    width: 70px;
+    margin: 0 10px;
+    font-size: 20px;
+    line-height: 80px;
+    text-align: center;
+    color: rgb(62, 29, 9);
+}
+header .head-nav ul li .current {
+    background: url(../images/nav-shape.png) no-repeat center;
+}
+header .join {
+    top: 30%;
+    width: 10%;
+    color: #fff;
+    text-align: center;
+}
+header .join button {
+    width: 80%;
+    height: 60px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -1px -1px 1px 0 #ccc;
+    background-color: rgb(32, 146, 1);
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.main {
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+    border: 1px solid rgb(88, 49, 25);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0 rgb(63, 25, 5);
+    background-color: rgb(73, 32, 7);
+    color: rgb(187, 172, 162);
+    line-height: 1.5;
+}
+.main h2 {
+    margin: 1.6% 0 0 1.6%;
+}
+.main ul {
+    width: 100%;
+}
+.main ul li {
+    float: left;
+    width: 30%;
+    margin: 1.6%;
+}
+.main ul li img {
+    width: 100%;
+}
+.main ul li h3 {
+    margin-bottom: 10px;
+}
+
+
+footer {
+    float: left;
+    clear: both;
+    height: 60px;
+    margin-top: 20px;
+    padding: 18px 0;
+    font-family: Arial;
+    background-color: rgba(23, 146, 1, .5);
+    color: rgb(66, 255, 14);
+}
+footer .share {
+    float: left;
+    margin-left: 15%;
+}
+footer .copyright {
+    float: right;
+    margin-right: 15%;
+    font-size: 13px;
+}
