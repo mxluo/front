@@ -6,7 +6,7 @@
 */
 @font-face {
     font-family: 'MyriadPro';
-    src: url('../../public/fonts/MyriadPro-Semibold.otf') format('opentype');
+    src: url('../fonts/MyriadPro-Semibold.otf') format('opentype');
     font-weight: normal;
     font-size: normal;
 }

@@ -24,7 +24,7 @@ article {
 }
 body {
     background-color: #fed58e;
-    font-family: "Georgia";
+    font-family: "Georgia", Arial;
 }
 button {
     border: 1px solid #145014;
@@ -33,7 +33,6 @@ button {
     font-weight: bold;
     color: #fff;
 }
-
 /*****　header *****/
 header {
     position: relative;
@@ -71,12 +70,13 @@ header .search {
 header .search form {
     float: right;
     width: 16%;
+    min-width: 210px;
     margin-right: 15%;
 }
 header .search form input {
     width: 64%;
     height: 28px;
-    margin: 5px 3%;
+    margin: 5px 0 5px 3%;
     padding-left: 10px;
     border: none;
     border-radius: 2px;
@@ -86,6 +86,7 @@ header .search form input {
 header .search form button {
     width: 28%;
     height: 28px;
+    margin-left: 3%;
 }
 header .logo {
     position: absolute;
@@ -104,7 +105,7 @@ header .logo {
 }
 /*aside*/
 .main aside {
-    float: left;
+    float: right;
     width: 25%;
     padding-right: 10px;
 }
@@ -155,7 +156,6 @@ header .logo {
 }
 .main aside .connect .title,
 .main aside .news .title {
-    height: 40px;
     font-size: 18px;
     font-weight: bold;
     line-height: 40px;
@@ -180,7 +180,6 @@ header .logo {
     height: 20px;
 }
 .main aside .news .title {
-    height: 40px;
     background-color: #be841f;
     color: #6a4815;
 }
@@ -202,7 +201,6 @@ header .logo {
 }
 .main aside .news button {
     width: 100%;
-    height: 40px;
     margin: 15px 0;
     font-size: 18px;
     font-weight: bold;
@@ -211,15 +209,56 @@ header .logo {
 }
 /*content*/
 .main .content {
+    position: relative;
     float: right;
     width: 75%;
-    background-color: rgb(253, 246, 234);
-    font-size: 14px;
-    line-height: 1.714;
-    color: rgb( 82, 82, 82 );
+    padding: 10px;
+    background-color: #fdf6ea;
+}
+.main .content .cover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background-color: #fdf6ea;
+}
+.main .content .shadow {
+    position: absolute;
+    left:-5%;
+    bottom: 0;
+    z-index: 0;
+    width: 110%;   
+}
+.main .content .pic {
+    width: 100%;
+}
+.main .content .thumbnail {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 20px;
+    background-color: #ebe0ce;
+}
+.main .content .thumbnail img {
+    width: 100px;
+    height: 70px;
+    margin: 5px 15px;
+    cursor: pointer;
+}
+.main .content .words {
+    padding: 30px;
 }
 .main .content .words h3 {
-    color: rgb(169, 122, 53);
+    color: #a97a35;
+    font-size: 20px;
+    line-height: 40px;
+}
+.main .content .words p {
+    margin: 15px 0;
+    color: #525252;
+    font-size: 14px;
+    line-height: 1.714;
+    word-break: break-all;
 }
 
 
@@ -229,13 +268,111 @@ footer {
     float: left;
     clear: both;
     width: 100%;
+    box-shadow: 0 0 1px 0 #fdf6ea;
 }
 footer .foot-nav,
 footer .copyright {
+    float: left;
     width: 70%;
-    margin: 0 auto;
+    margin: 0 15%;
+}
+footer .foot-nav {
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 footer .foot-nav li {
     float: left;
     width: 25%;
+    padding: 0 20px;
+    color: #886227;
+}
+footer .foot-nav li .icon {
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 1px 0 #fdf6ea, 1px 2px 3px 1px #7C511A inset;
+    background-color: #A97E37;
+}
+footer .foot-nav li .icon div {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+footer .foot-nav li .icon .home {
+    background-position: -2px top;
+}
+footer .foot-nav li .icon .home:hover {
+    background-position: -2px -88px;
+}
+footer .foot-nav li .icon .about {
+    background-position: -242px top;
+}
+footer .foot-nav li .icon .about:hover {
+    background-position: -242px -88px;
+}
+footer .foot-nav li .icon .news {
+    background-position: -482px top;
+}
+footer .foot-nav li .icon .news:hover {
+    background-position: -482px -88px;
+}
+footer .foot-nav li .icon .blog {
+    background-position: -722px top;
+}
+footer .foot-nav li .icon .blog:hover {
+    background-position: -722px -88px;
+}
+footer .foot-nav li p {
+    line-height: 1.5;
+    word-break: break-all;    
+}
+footer .copyright {
+    height: 80px;
+    border-top: 5px solid #D7AF6A;
+    font-size: 13px;
+    line-height: 80px;
+    color: #D7AF6A;
+    text-align: center;
+}
+
+
+/*device width < 960*/
+@media screen and (max-width: 960px) {
+    header .desc .left {
+        margin-left: 0;
+    } 
+    header .desc .right,
+    header .search form {
+        margin-right: 0;
+    }  
+    .main,
+    footer .foot-nav,
+    footer .copyright {
+        width: 100%;
+        margin: 0;
+    }
+}
+/*device width < 640*/
+@media screen and (max-width: 640px) {  
+    header {
+        text-align: center;
+    } 
+    header .desc .right,
+    header .search form {
+        float: none;
+        margin: 30px auto;
+    }
+    .main aside,
+    .main .content {
+        width: 100%;
+    }
+    header .desc .left,
+    .main .content .thumbnail,
+    footer .foot-nav {
+        display: none;
+    }
 }
