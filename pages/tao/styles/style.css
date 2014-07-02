@@ -1,0 +1,55 @@
+/*reset*/
+header, footer, nav, aside, button {
+    display: block;
+}
+html, body, div, header, footer, nav, aside, button, span, a, ul, li, form, input, i, p, h1, h2, h3, h4, h5, h6 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    /*list-style: none;*/
+}
+a {
+    text-decoration: none;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix{*zoom:1;}
+
+.container {
+    width: 1190px;
+    margin: 0px auto;
+
+    /*background-color: #ccc;*/
+}
+/*header*/
+header .search {
+    display: inline;
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+}
+header .logo {
+    display: inline;
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin-left: -100%;
+    background-color: #f0f;
+}
+header .phone {
+    display: inline;
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin-left: -200px;
+    background-color: #0f0;
+}

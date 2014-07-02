@@ -1,0 +1,469 @@
+/* banner */
+.banner {
+    position: relative;
+    height: 500px;
+    background: url(../images/banner.jpg) no-repeat center top;
+}
+.banner span {
+    display: inline-block;   
+}
+.banner .container {
+    position: relative;
+    height: 100%;
+}
+.banner .banner-logo {
+    position: absolute;
+    top: 110px;
+    left: 110px;
+}
+.banner .monthly {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 60px;
+}
+.banner .monthly li {
+    float: left;
+    width: 190px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #2a2f28;
+    color: #a6a6a6;
+}
+.banner .monthly .prev, .banner .monthly .next {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    padding-top: 10px;
+    background-color: #2a2f28;
+    text-align: center;
+    cursor: pointer;
+}
+.banner .monthly .prev {
+    left: 0;
+    bottom: 0;
+}
+.banner .monthly .next {
+    left: 940px;
+    bottom: 0;
+}
+.banner .monthly li .month {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    cursor: pointer;
+}
+.prev-icon{
+    width: 10px;
+    height: 15px;
+    background: url(../images/lr.png) top left;
+}
+.next-icon {
+    width: 10px;
+    height: 15px;
+    background: url(../images/lr.png) right bottom;
+}
+.banner .monthly li .month .icon-down {
+    float: right;
+    width: 8px;
+    height: 4px;
+    margin: 8px;
+    background: url(../images/icon-down.png);
+}
+.banner .monthly li .info {
+    display: none;
+    color: #fff;
+}
+.banner .monthly li .info h3 {
+    font-size: 18px;
+    line-height: 24px;
+}
+.banner .monthly li .info .date {
+    font-size: 12px;
+    margin-top: 10px;
+}
+.banner .contact {
+    position: absolute;
+    top: 438px;
+    left: 50%;
+    z-index: -999;
+    width: 1026px;
+    height: 250px;
+    margin-left: -513px;
+    background: url(../images/contact.png) no-repeat top center;
+}
+.social {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+.social span, .online span {
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    background-image: url(../images/social.png);
+    background-repeat: no-repeat;
+}
+.social .tencent {
+    background-position: -50px 0;
+}
+.social .weixin {
+    background-position: -95px 0;
+}
+.online {
+    position: absolute;
+    top: 150px;
+    left: 780px;
+}
+.online span {
+    background-position: right top;
+}
+
+
+/* main */
+.main {
+    margin-top: 170px;
+}
+.main section {
+    padding-top: 40px;
+}
+.main .meng {
+    background-color: #e27bc4;
+    opacity: .7;
+}
+.main .more {
+    position: absolute;
+    text-align: center;
+}
+.main .next, 
+.main .prev {
+    position: absolute;
+    width: 33px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.main .title {
+    text-align: center;
+    color: #021f57;
+}
+.main .title p {
+    padding: 10px 0;
+}
+.main .title .en {
+    font-family: Arial;
+    font-size: 24px;
+}
+.main .title h3 {
+    padding-top: 5px;
+    font-family: "宋体";
+    font-size: 28px;
+}
+.main .title h3 span {
+    color: #e27bc4;
+}
+.photo-case .photo-list {
+    position: relative;
+}
+.photo-case .photo-list ul li {
+    position: relative;
+    float: left;
+}
+.photo-case .photo-list ul li img {
+    width: 300px;
+    height: 290px;
+    margin-bottom: 10px;
+}
+.photo-case .photo-list ul li img.h {
+    width: 370px;
+    height: 590px;
+    margin: 0px 10px;
+}
+.photo-case .photo-list ul li .meng,
+.photo-case .photo-list ul li .meng-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 290px;
+}
+.photo-case .photo-list ul li .meng-logo {
+    background: url(../images/photo-logo.png) no-repeat center center;
+}
+.photo-case .photo-list ul li:last-child {
+    margin-left: -100%;
+}
+.photo-case .more {
+    left: 100%;
+    top: 0;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    box-shadow: inset 1px 0 1px #444;
+}
+.video-case .video-list ul {
+    float: left;
+    width: 636px;
+    height: 290px;
+}
+.video-case .video-list .video,
+.video-case .video-list ul li {
+    float: left;
+    margin: 3px;
+}
+.video-case .video-list .video video {
+    width: 348px;
+    height: 284px;
+}
+.video-case .video-list ul li img {
+    width: 206px;
+    height: 138px;
+}
+.team-case .team-person {
+    height: 300px;
+    overflow: hidden;
+}
+.team-case .team-person img {
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+.team-case .team-person .info {
+    float: left;
+    width: 690px;
+    height: 300px;
+    background: url(../images/team-bg.png) no-repeat center top;
+}
+.team-case .team-person .info .short {
+    padding: 30px 0 40px 120px;
+    font-size: 18px;
+    color: #e27bc4;
+}
+.team-case .team-person .info .short p {
+    margin-top: 15px;
+}
+.team-case .team-person .info .short .zhiwei {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4e718d;
+}
+.team-case .team-person .info .short .zhiwei span {
+    background-color: #4e718d;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;  
+}
+.team-case .team-person .info .short .en {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #abc6db;
+}
+.team-case .team-person .info .word {
+    padding: 0 80px;
+    font-size: 14px;
+    color: #666;
+    line-height: 2;
+}
+.team-case .team-list {
+    position: relative;
+    height: 140px;
+}
+.team-case .team-list ul li {
+    float: left;
+}
+.team-case .team-list ul li.active {
+    border: 2px solid #e27bc4;
+}
+.team-case .team-list ul li img {
+    width: 160px;
+    height: 136px;
+    cursor: pointer;
+}
+.team-case .team-list ul li .team-person {
+    display: none;
+}
+.team-case .team-list .more {
+    top: 46px;
+    left: 100%;
+    height: 30px;
+    line-height: 15px;
+}
+.team-case .team-list .prev {
+    left: 100%;
+    top: 76px;
+    background-color: #b3b3b3;
+}
+.team-case .team-list .next { 
+    left: 100%;   
+    top: 106px;   
+    background-color: #ffd801;
+}
+.desc-case .desc-list {
+    margin-top: 20px;
+}
+.desc-case .desc-list .desc,
+.desc-case .desc-list .news-list,
+.desc-case .desc-list .wiki-list {
+    position: relative;
+}
+.desc-case .desc-list .desc {
+    float: left;
+    width: 260px;
+}
+.desc-case .desc-list .desc img {
+    width: 260px;
+    height: 250px;
+    padding-bottom: 5px;
+}
+.desc-case .desc-list .desc .info {
+    width: 260px;
+}
+.desc-case .desc-list .desc .info h4 {
+    height: 40px;
+    background-color: #ade3ff;
+    font-family: "宋体";
+    font-size: 20px;
+    line-height: 40px;
+    color: #574b89;
+    text-align: center;
+}
+.desc-case .desc-list .desc .info p {
+    height: 70px;
+    padding: 0 10px;
+    background-color: #fecef8;
+    line-height: 23px;
+    color: #8f4e56;    
+}
+.desc-case .desc-list .news-list {
+    float: left;
+    width: 420px;
+    margin: 0 20px;
+}
+.desc-case .desc-list .news-list li {
+    width: 420px;
+    height: 80px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+.desc-case .desc-list .news-list li:first-child {
+    margin-top: 0;
+}
+.desc-case .desc-list .news-list li a img {
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.desc-case .desc-list .news-list li a h4,
+.desc-case .desc-list .news-list li a p {
+    float: left;
+    width: 330px;
+    margin-left: 10px;
+    line-height: 20px;
+}
+.desc-case .desc-list .news-list li a h4 {
+    font-size: 16px;
+    color: #222;
+}
+.desc-case .desc-list .news-list li a p {
+    color: #666;
+}
+.desc-case .desc-list .wiki-list {
+    float: left;
+}
+.desc-case .desc-list .wiki-list .wiki-box {
+    width: 240px;
+    height: 370px;
+    overflow: hidden;   
+}
+.desc-case .desc-list .wiki-list ul {
+    width: 720px;
+    height: 370px;  
+}
+.desc-case .desc-list .wiki-list li {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 370px;
+}
+.desc-case .desc-list .wiki-list li img {
+    width: 100%;
+    height: 100%;
+}
+.desc-case .desc-list .wiki-list li .meng {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 240px; 
+    color: #fff;
+    text-align: center;
+}
+.desc-case .desc-list .wiki-list li .meng h4 {
+    font-family: "宋体";
+    font-size: 26px;
+    line-height: 46px;
+}
+.desc-case .desc-list .wiki-list li .meng p {
+    margin: 5px;
+    line-height: 20px; 
+}
+.desc-case .desc-list .wiki-list .prev {
+    left: 15px;
+    top: 180px;
+    background-color: #222;
+    border-radius: 3px;
+    opacity: .5;
+}
+.desc-case .desc-list .wiki-list .next {
+    right: 15px;
+    top: 180px;
+    background-color: #222;
+    border-radius: 3px;
+    opacity: .7;
+}
+.desc-case .desc-list .more {
+    top: -30px;
+    right: 0;
+    width: 45px;
+    height: 15px;
+    line-height: 15px;    
+}
+.question .question-list {
+    position: relative;
+}
+.question .question-list ul li {
+    float: left;
+    width: 300px;
+    margin: 10px 15px;
+}
+.question .question-list ul li .ask {
+    line-height: 30px;
+    color: #222;
+}
+.question .question-list ul li .ask span {
+    float: right;
+    display: inline-block;
+    color: #999;
+}
+.question .question-list ul li .answer {
+    width: 300px;
+    line-height: 30px;
+    color: #666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.question .question-list .more {
+    top: -30px;
+    right: 15px;
+    width: 45px;
+    height: 15px;
+    line-height: 15px;    
+}

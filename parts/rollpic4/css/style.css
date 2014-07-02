@@ -1,0 +1,58 @@
+/* 
+ *@description 可向四个方向滚动的图片
+ *@author Vicky Roman
+*/
+.pic-box {
+    position: relative;
+    width: 60%;
+    min-width: 512px;
+    margin: 100px auto;
+}
+.pic-box .pic {
+    position: relative;
+    width: 512px;
+    height: 384px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.pic-box .pic img {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.pic-box .pic .current {
+    display: block;
+}
+.pic-box .btn {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-image: url(../img/icons.jpg);
+    cursor: pointer;
+}
+.pic-box .goleft {
+    top: 50%;
+    left: -60px;
+    margin-top: -26px;
+    background-position: -210px -59px;
+}
+.pic-box .goright {
+    top: 50%;
+    right: -60px;
+    margin-top: -26px;
+    background-position: -75px -59px;
+}
+.pic-box .gotop {
+    left: 50%;
+    top: -60px;
+    margin-left: -26px;
+    background-position: -8px -59px;
+}
+.pic-box .gobottom {
+    left: 50%;
+    bottom: -60px;
+    margin-left: -26px;
+    background-position: -143px -59px;
+}

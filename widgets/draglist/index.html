@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title>列表拖动排序</title> 
+<style type="text/css"> 
+* {margin: 0; padding: 0;} 
+ul {float:left; width:40%; margin: 2%; border: 1px solid #adff2f; list-style: none;} 
+li {height: 50px; line-height: 50px; padding: 0; list-style: none;} 
+li:hover {background: #bdb76b; cursor: move;} 
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.clearfix {*zoom:1;}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+</head> 
+<body> 
+<ul id="test1">
+    <p>js default</p> 
+    <li>第一条</li> 
+    <li>第二条</li> 
+    <li>第三条</li> 
+    <li>第四条</li> 
+    <li>第五条</li> 
+    <li>第六条</li> 
+    <li>第七条</li>  
+</ul>    
+<ul id="test2">
+    <p>js custom</p>
+    <li>第一条</li> 
+    <li>第二条</li> 
+    <li>第三条</li> 
+    <li>第四条</li> 
+    <li>第五条</li> 
+    <li>第六条</li> 
+    <li>第七条</li> 
+</ul>
+<div class="clearfix"></div>
+<ul id="test3">
+    <p>jq default</p>
+    <li>第一条</li> 
+    <li>第二条</li> 
+    <li>第三条<button>button</button></li> 
+    <li>第四条</li> 
+    <li>第五条</li> 
+    <li>第六条</li> 
+    <li>第七条</li> 
+</ul>
+<ul id="test4">
+    <p>jq custom</p>
+    <li>第一条</li> 
+    <li>第二条</li> 
+    <li>第三条</li> 
+    <li>第四条</li> 
+    <li>第五条</li> 
+    <li>第六条</li> 
+    <li>第七条</li> 
+</ul>
+<script type="text/javascript" src="draglist.js"></script>
+<script type="text/javascript" src="draglist_jq.js"></script>
+<script>
+    //js
+    //var datejs1=new Date();
+
+    dragList('test1');
+    dragList('test2',{lineColor:"blue", itemColor:"red"});
+
+    //var datejs2=new Date();
+    //var jst = datejs2 - datejs1;
+    //console.log('js:' + jst);
+
+    //jq
+    //var datejq1=new Date();
+
+    $('#test3').dragList();
+    $('#test4').dragList({lineColor:"blue", itemColor:"red"});
+
+    //var datejq2=new Date();
+    //var jqt = datejq2 - datejq1;
+    //console.log('jq:' + jqt);
+</script> 
+</body> 
+</html> 

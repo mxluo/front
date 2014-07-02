@@ -1,0 +1,246 @@
+/*         非首页通用样式        */
+
+/* common banner */
+.common-banner {
+    width: 100%;
+}
+/* sidebar left */
+.main-rel {
+    position: relative; 
+}
+.sidebar-left {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    width: 200px;
+    text-align: right;
+}
+.sidebar-left ul .title {
+    z-index: 999;
+    padding: 15px 10px 10px 0;
+    background-color: #e27bc4;
+    color: #fff;
+}
+.sidebar-left ul .title h1 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 25px;
+}
+.sidebar-left ul .title .en {
+    font-size: 20px;
+    line-height: 35px;
+}
+.sidebar-left ul li {
+    height: 50px;
+    line-height: 50px;
+}
+.sidebar-left ul li .en,
+.sidebar-left ul li h2 {
+    display: inline-block;
+    font-size: 14px;
+}
+.sidebar-left ul li .en {
+    padding-right: 10px;
+    color: #bbb;
+}
+.sidebar-left ul li h2 {
+    color: #444;
+}
+.sidebar-left ul li.active {
+    background-color: #e27bc4;
+}
+.sidebar-left ul li.active .en,
+.sidebar-left ul li.active h2 {
+    color: #fff;
+}
+/* sidebar right */
+.sidebar-right {
+    float: right;
+    width: 300px;
+    margin-top: 10px;
+}
+.sidebar-right .title {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #ffd801;
+    line-height: 40px;
+}
+.sidebar-right .title span {
+    float: right;
+    font-size: 14px;
+}
+.sidebar-right ul {
+    padding: 10px;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #ccc;
+}
+.sidebar-right ul li {
+    font-size: 13px;
+    line-height: 30px;
+}
+.sidebar-right ul li a {
+    color: #222;
+}
+.sidebar-right ul li span {
+    float: right;
+}
+.sidebar-right .ad {
+    width: 300px;
+    height: 220px;
+    margin: 10px 0;
+}
+/* content */
+.content-left {
+    width: 670px;
+}
+.content-right {
+    width: 750px;
+    float: right;
+}
+.content .breadcrumb {
+    height: 45px;
+    padding-right: 20px;
+    border-bottom: 1px solid #aaa;
+    font-size: 14px;
+    color: #888;
+    line-height: 45px;
+}
+.content-right .breadcrumb {
+    text-align: right;
+}
+.content .breadcrumb a {
+    color: #888;
+}
+/* pager */
+.pager {
+    height: 35px;
+    margin: 20px 0;
+    text-align: center;
+}
+.pager li {
+    float: left;
+    padding: 0 15px;
+    margin: 0 10px;
+    background-color: #ccc;
+    font-size: 15px;
+    color: #fff;
+    line-height: 35px;
+}
+.pager li.current {
+    background-color: #e27bc4;
+}
+
+
+/*        各单页样式          */
+
+/* team */
+.content .team-list ul li {
+    height: 250px;
+    border-bottom: 1px dotted #bbb;
+}
+.content .team-list ul li img {
+    float: left;
+    width: 175px;
+    height: 210px;
+    margin: 20px 0;
+}
+.content .team-list ul li .info {
+    position: relative;
+    float: right;
+    width: 550px;
+    height: 210px;
+    margin: 20px 0;
+}
+.content .team-list ul li .info h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #222;
+}
+.content .team-list ul li .info p {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #666;
+}
+.content .team-list ul li .info .more {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 25px;
+    padding-left: 5px;
+    background-color: #e27bc4;
+    font-size: 18px;
+    color: #fff;
+    line-height: 25px;
+}
+.content .team-list ul li .info .more .plus {
+    display: inline-block;
+    padding: 0 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffd801;
+}
+.content .team-detail {
+    position: relative;
+    color: #666;
+}
+.content .team-detail .photo {
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    width: 255px;
+    height: 255px;
+    border-radius: 100%;
+}
+.content .team-detail .indr {
+    width: 500px;
+    padding: 20px 0;
+    margin: 100px 0 100px 250px;
+    background-color: #eee;
+}
+.content .team-detail .indr p {
+    width: 400px;
+    margin-left: 100px;
+    font-size: 20px;
+    line-height: 40px;
+}
+.content .team-detail .indr p.word {
+    font-size: 16px;
+}
+.content .team-detail .desc {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 25px;
+    text-indent: 2em;
+}
+
+/* wiki */
+.content .wiki-list ul li {
+    height: 150px;
+    border-bottom: 1px dotted #bbb;
+}
+.content .wiki-list ul li img {
+    float: left;
+    width: 200px;
+    height: 110px;
+    margin: 20px 0;
+}
+.content .wiki-list ul li .info {
+    float: right;
+    width: 450px;
+    height: 110px;
+    margin: 20px 0;
+    font-size: 13px;
+}
+.content .wiki-list ul li .info h3 {
+    line-height: 20px;
+    color: #222;
+}
+.content .wiki-list ul li .info p {
+    padding-top: 10px;
+    line-height: 25px;
+    color: #666;
+}

@@ -1,0 +1,185 @@
+/* reset */
+header, footer, nav, aside, section, article, img, video, audio {
+    display: block;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img, button, input, textarea, header, footer, nav, aside, section, article, video, audio { 
+    margin: 0;
+    padding: 0;
+}
+/* 设置默认字体 */
+body,
+button, input, select, textarea { /* for ie */
+    font: 12px/1 Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
+h1 { font-size: 18px; /* 18px / 12px = 1.5 */ }
+h2 { 
+    font-size: 16px; 
+    font-weight: normal;
+}
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+ul, ol { list-style: none; }
+a { text-decoration: none;}
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+img { border: none; } 
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; }
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix{*zoom:1;}
+
+.bg-pink {
+    background-color: #e27bc4;
+    color: #fff;
+}
+.bg-pink a {
+    color: #fff;
+}
+
+
+/* header */
+.container {
+    width: 990px;
+    margin: 0px auto;
+}
+header {
+    height: 180px;
+    background: url(../images/header.jpg) no-repeat center top;
+}
+.toolbar {
+    position: relative;
+    height: 92px;
+    color: #fff;
+}
+.toolbar a {
+     color: #fff;
+}
+.toolbar .head-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -160px;
+}
+.toolbar .child-right {
+    height: 50%;
+}
+.toolbar .child-right ul li,
+.toolbar .child-right div {
+    float: right;
+}
+.toolbar .child-right ul li {
+    padding: 0 10px;
+    margin: 10px 0;
+    border-right: 1px solid #fff;
+}
+.toolbar .child-right ul li:first-child {
+    padding-right: 0px;
+    border-right: none;
+}
+.menu ul li {
+    float: left;
+}
+.menu ul li a {
+    display: block;
+    width: 110px;
+    height: 88px;
+    color: #666;
+    text-align: center;
+}
+.menu ul li a h2 {
+    margin-top: 15px;
+    line-height: 30px;
+    color: #333;
+}
+.menu ul li.current {
+    background: url(../images/nav-bg.png) no-repeat;
+}
+.menu ul li.current a, .menu ul li.current h2 {
+    color: #fff;
+}
+
+/* floatbar */
+.floatbar {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 80px;
+    height: 300px;
+    background: url(../images/ma.png) no-repeat center top;
+}
+.floatbar .bg-pink {
+    margin-top: 60px;
+    text-align: center;
+}
+.floatbar .cont {
+    padding-top: 10px;
+    padding-bottom: 45px;
+    background: url(../images/qq.png) no-repeat center bottom;  
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+.floatbar .cont .en {
+    font-size: 14px;
+}
+.floatbar .bg-pink .erwei {
+    padding: 8px 0;
+    background-color: #ffd801;
+    line-height: 20px;
+    color: #000;
+}
+.floatbar .bg-pink .erwei img {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+}
+.floatbar .bg-pink .top {
+    height: 25px;
+    line-height: 25px;
+}
+
+
+/* footer */
+footer a {
+    color: #fff;
+}
+footer .link {
+    height: 60px;
+    padding: 5px 0;
+    background-color: #f2a5dd;
+}
+footer .link ul li {
+    float: left;
+    margin: 0 10px;
+    line-height: 30px;
+}
+footer .link ul li:first-child {
+    height: 60px;
+    color: #fff;
+}
+footer .site-info {
+    height: 170px;
+}
+footer .site-info img {
+    float: left;
+    margin: 30px 50px;
+}
+footer .site-info .info {
+    float: left;
+    margin-top: 40px;
+}
+footer .site-info p {
+    line-height: 30px;
+}
+footer .site-info .other {
+    padding-top: 10px; 
+    color: #fcd800;
+}

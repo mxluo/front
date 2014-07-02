@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>progressbar</title>
+    <style>
+        .test {
+            margin: 20px 0;
+        }
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+</head>
+<body>
+    <div id="test1" class="test"></div>
+    <div id="test2" class="test"></div>
+    <div id="test3" class="test"></div>
+    <script src="progressbar_jq.js"></script>
+    <script>
+    $('#test1').progressbar();
+    $('#test2').progressbar({
+        initValue:'50%',
+        striped: true,
+        active: true
+    });
+    $('#test3').progressbar({
+        width: '800px', 
+        height: '30px',
+        initValue: "10%",
+        barColor: '#777', 
+        borderRadius: '10px',
+        striped: true,
+        // active: true,
+        // autoIncrease: true,
+        // speed: 5000
+    });
+    </script>
+</body>
+</html>
