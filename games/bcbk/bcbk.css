@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    overflow-y: hidden;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+b {
+    font-size: 50px;
+}
+#container {
+    position: relative;
+    width: 360px;
+    height: 620px;
+    margin: 30px auto;
+    background-color: #ccc;
+    font-family: 'Microsoft YaHei', Arial;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+#container table {
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+    border: solid #000; 
+    border-width:1px 0px 0px 1px;
+}
+#container table td {
+    width: 25%;
+    height: 25%;
+    border: solid #000; 
+    border-width:0px 1px 1px 0px;
+}
+.y {
+    background-color: yellow;
+}
+.w {
+    background-color: #fff;
+}
+.b {
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+}
+#start {
+    color: #fff;
+}
+#count {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    color: #f00;
+    line-height: 30px;
+}
+/*mobile*/
+/*device width < 800*/
+@media screen and (max-width: 800px) {
+    #container {
+        width: 100%;
+        margin: 0;
+    }    
+}

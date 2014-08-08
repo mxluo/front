@@ -86,7 +86,6 @@
     position: absolute;
     top: 438px;
     left: 50%;
-    z-index: -999;
     width: 1026px;
     height: 250px;
     margin-left: -513px;
@@ -97,7 +96,13 @@
     top: 150px;
     left: 150px;
 }
-.social span, .online span {
+.online a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.social a span, .online a span {
     width: 32px;
     height: 32px;
     margin: 5px;
@@ -217,7 +222,7 @@
     float: left;
     margin: 3px;
 }
-.video-case .video-list .video video {
+.video-case .video-list .video {
     width: 348px;
     height: 284px;
 }

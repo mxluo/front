@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
     //banner 菜单切换
     $('.monthly .active').bannerUp();
-    $('.monthly li').click(function(event) {
+    $('.monthly>li').click(function(event) {
         $(this).bannerUp();
     });
     $('.monthly .prev').click(function(event) {
@@ -60,9 +60,9 @@ jQuery(document).ready(function($) {
         var num = prt.children('li').length;
         var mar = parseInt(prt.css('margin-left'));
         if (mar >= 0) {
-            prt.animate({marginLeft: -240*(num-1),},400);
+            prt.animate({marginLeft: -240*(num-1)},400);
         } else {
-            prt.animate({marginLeft: mar+240,},400);
+            prt.animate({marginLeft: mar+240},400);
         }
     });
     $('.wiki-list .next').click(function(event) {
@@ -70,9 +70,9 @@ jQuery(document).ready(function($) {
         var num = prt.children('li').length;
         var mar = parseInt(prt.css('margin-left'));
         if (mar <= -240*(num-1)) {
-            prt.animate({marginLeft: 0,},400);
+            prt.animate({marginLeft: 0},400);
         } else {
-            prt.animate({marginLeft: mar-240,},400);
+            prt.animate({marginLeft: mar-240},400);
         }
     });
 });
